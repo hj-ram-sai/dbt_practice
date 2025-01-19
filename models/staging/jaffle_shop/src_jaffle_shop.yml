@@ -2,11 +2,11 @@ version: 2
 
 sources:
   - name: jaffle_shop
-    database: raw
-    schema: jaffle_shop
+    database: protean-bus-428419-e8
+    schema: dbt_rsai
     tables:
-      - name: customers 
-      - name: orders
+      - name: jaffle_shop_customers 
+      - name: jaffle_shop_orders
         loaded_at_field: _etl_loaded_at
         freshness:
           warn_after: {count: 12, period: hour}
